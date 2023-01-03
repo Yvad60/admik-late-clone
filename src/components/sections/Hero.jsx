@@ -9,9 +9,12 @@ export default function Hero() {
       <div className="absolute flex items-center justify-center w-full h-screen z-[100]">
         <div className="overflow-hidden h-fit w-fit">
           <motion.div
-            initial={{ y: 400 }}
-            animate={{ y: 0 }}
-            transition={{ delay: 0.2, duration: 0.4, ease: "easeIn" }}
+            initial={{ y: 400, display: "block" }}
+            animate={{ y: 0, display: "none" }}
+            transition={{
+              y: { delay: 0.2, duration: 0.4, ease: "easeIn" },
+              display: { delay: 1.7, duration: 0.4 },
+            }}
           >
             <Image src={admikLogo} alt="admik logo" className="max-w-[840px]" />
           </motion.div>
@@ -22,7 +25,7 @@ export default function Hero() {
         animate={{ y: -1000 }}
         transition={{
           delay: 1.2,
-          duration: 0.8,
+          duration: 0.7,
           ease: [0.87, 0.05, 0.69, -0.06],
         }}
         className="relative z-50 w-full h-screen bg-white"

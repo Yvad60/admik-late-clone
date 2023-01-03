@@ -1,6 +1,10 @@
-export default function Button({ children }) {
+export default function Button({ children, dashedBorder }) {
   return (
-    <button className="px-2 border rounded-full border-primary_light text-primary_light leading-[1] py-[5px]">
+    <button
+      className={`px-2 border rounded-full leading-[1] py-[5px] border-current ${
+        dashedBorder && "border-dashed"
+      }`}
+    >
       {children}
     </button>
   );
