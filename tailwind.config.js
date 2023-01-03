@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/pages/**/*.{js,ts,jsx,tsx}", "./src/components/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       colors: {
@@ -8,6 +11,7 @@ module.exports = {
       },
       fontFamily: {
         gt_america_mono: ["GT-America-Mono-Regular", "sans-serif"],
+        monument_grotesk: ["Monument-Grotesk-Ultra", "sans-serif"],
       },
     },
   },

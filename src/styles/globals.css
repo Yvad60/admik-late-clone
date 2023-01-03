@@ -6,3 +6,8 @@
   font-family: "GT-America-Mono-Regular";
   src: url("/fonts/GT-America-Mono-Regular.woff2");
 }
+
+@font-face {
+  font-family: "Monument-Grotesk-Ultra";
+  src: url("/fonts/MonumentGrotesk-Ultra.woff2");
+}
