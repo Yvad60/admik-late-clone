@@ -2,7 +2,14 @@
 module.exports = {
   content: ["./src/pages/**/*.{js,ts,jsx,tsx}", "./src/components/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary_light: "#fcfaf3",
+      },
+      fontFamily: {
+        gt_america_mono: ["GT-America-Mono-Regular", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
